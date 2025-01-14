@@ -1,0 +1,65 @@
+:root {
+    --main-colour: #483025;
+    --secondary-colour: #7b6a5c;
+    --con-colour: #c5b4a4;
+    --bg-colour: #f9f6f2;
+    --text-colour: #0c0804;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/login-bg.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: var(--secondary-colour);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--main-colour);
+}
+
+.toggle {
+    color: var(--secondary-colour);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.toggle:hover {
+    color: var(--con-colour);
+}

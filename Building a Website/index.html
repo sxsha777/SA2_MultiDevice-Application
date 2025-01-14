@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <!-- Header/Navigation Bar Section -->
+     <header>
+        <div class="nav container">
+            <a href="#" class="logo">Min.Cafe</a>
+            <div class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#service" class="nav-link">Services</a>
+                <a href="#product" class="nav-link">Products</a>
+                <a href="#review" class="nav-link">Review</a>
+                <a href="#booking" class="nav-link">Booking</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#"><i class='bx bxs-user'></i></a>
+                <a href="#"><i class='bx bx-cart' ></i></a>
+            </div>
+
+        </div>
+     </header>
+
+     <!-- Home Page -->
+      <section class="home container" id="home">
+        <div class="home-text">
+            <h1>Let's espresso our love for <br> Coffee!</h1>
+            <p>Discover the magic of coffee with Min.Cafe. Order anywhere, anytime!</p>
+            <a href="#" class="btn">
+                <span>Shop Now</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </a>
+        </div>
+        <img src="images\coffee.png" alt="" class="home-img">
+      </section>
+
+     <!-- Services Section -->
+      <section class="service container" id="service">
+        <div class="heading">
+            <h2>Bringing together culture, coffee & top-level services.</h2>
+        </div>
+            <div class="service-content">
+                <div class="s-box">
+                    <img src="images\icon-1.png" alt="">
+                    <p>Equipment</p>
+                </div>
+                <div class="s-box">
+                    <img src="images\icon-2.png" alt="">
+                    <p>Variety of Coffee</p>
+                </div>
+                <div class="s-box">
+                    <img src="images\icon-3.png" alt="">
+                    <p>TakeAway</p>
+                </div>
+                <div class="s-box">
+                    <img src="images\icon-4.png" alt="">
+                    <p>Coffee Beans</p>
+                </div>
+                <div class="s-box">
+                    <img src="images\icon-5.png" alt="">
+                    <p>Pastry</p>
+                </div>
+            </div>
+      </section>
+
+     <!-- Products Section -->
+      <section class="product container" id="product">
+        <div class="heading">
+            <h2>Our Best-Selling Products</h2>
+            <p>Treat Yourself to Our Customer Favorites from rich, aromatic coffees to freshly baked delights—crafted with passion, served with love!</p>
+        </div>
+      </section>
+
+      <div class="product-con">
+            <!-- Americano -->
+            <div class="product-box">
+                <i class='bx bx-heart heart-icon'></i>
+                <img src="images\americano.jpg" alt="">
+                <p>2 types available</p>
+                <h2>Americano</h2>
+                <div class="product-info">
+                    <span>AED 15</span>
+                    <i class='bx bx-cart' ></i>
+                </div>
+            </div>
+
+            <!-- Frappe -->
+            <div class="product-box">
+                <i class='bx bx-heart heart-icon'></i>
+                <img src="images\frappe.jpg" alt="">
+                <p>2 types available</p>
+                <h2>Frappe</h2>
+                <div class="product-info">
+                    <span>AED 12</span>
+                    <i class='bx bx-cart' ></i>
+                </div>
+            </div>
+
+            <!-- Latte -->
+            <div class="product-box">
+                <i class='bx bx-heart heart-icon'></i>
+                <img src="images\latte.jpg" alt="">
+                <p>2 types available</p>
+                <h2>Latte</h2>
+                <div class="product-info">
+                    <span>AED 10</span>
+                    <i class='bx bx-cart' ></i>
+                </div>
+            </div>
+
+            <!-- Mocha -->
+            <div class="product-box">
+                <i class='bx bx-heart heart-icon'></i>
+                <img src="images\mocha.jpg" alt="">
+                <p>2 types available</p>
+                <h2>Mocha</h2>
+                <div class="product-info">
+                    <span>AED 12</span>
+                    <i class='bx bx-cart' ></i>
+                </div>
+            </div>
+
+            <!-- Cappuccino -->
+            <div class="product-box">
+                <i class='bx bx-heart heart-icon'></i>
+                <img src="images\cappuccino.jpg" alt="">
+                <p>1 type available</p>
+                <h2>Cappuccino</h2>
+                <div class="product-info">
+                    <span>AED 12</span>
+                    <i class='bx bx-cart' ></i>
+                </div>
+            </div>
+
+            <!-- Irish Coffee -->
+            <div class="product-box">
+                <i class='bx bx-heart heart-icon'></i>
+                <img src="images\irish-coffee.jpg" alt="">
+                <p>1 type available</p>
+                <h2>Irish Coffee</h2>
+                <div class="product-info">
+                    <span>AED 10</span>
+                    <i class='bx bx-cart' ></i>
+                </div>
+            </div>
+      </div>
+       
+     <!-- Review Section -->
+      <section class="review container" id="review">
+        <div class="heading">
+            <h2>Customer Reviews</h2>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <!-- User-1 Review -->  
+              <div class="swiper-slide">
+                <div class="review-box">
+                    <img src="images\user-1.png" alt="">
+                    <h2>Ellie Jones</h2>
+                    <span>The coffee tastes amazing. <br> the flavor is subtle yet rich. love it!</span>
+                    <p>Taste of coffee varies depending on the type of beans used and how it is prepared. Some people prefer their coffee strong while others may prefer their coffee to have a more subtle flavor.</p>
+                </div>
+              </div>
+              
+              <!-- User-2 Review -->  
+              <div class="swiper-slide">
+                <div class="review-box">
+                    <img src="images\user-2.png" alt="">
+                    <h2>Aurora S.</h2>
+                    <span>The coffee here tastes absolutely delightful. <br> love my coffee strong! </span>
+                    <p>Taste of coffee varies depending on the type of beans used and how it is prepared. Some people prefer their coffee strong while others may prefer their coffee to have a more subtle flavor.</p>
+                </div>
+              </div>
+              
+              <!-- User-3 Review -->  
+              <div class="swiper-slide">
+                <div class="review-box">
+                    <img src="images\user-3.png" alt="">
+                    <h2>Nick JT.</h2>
+                    <span>The best coffee I have tried in a while. <br> love the pastries too!</span>
+                    <p>Taste of coffee varies depending on the type of beans used and how it is prepared. Some people prefer their coffee strong while others may prefer their coffee to have a more subtle flavor.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </section>
+
+     <!-- Booking Section -->
+      <section class="booking container" id="booking">
+        <img src="images\coffee-bg.png" alt="" class="booking-img">
+        <div class="booking-overlay"></div>
+        <div class="booking-data">
+            <h2>Book A Table <br> With Us! </h2>
+            <form action="booking">
+                <div class="input-box">
+                    <i class='bx bxs-phone-call' ></i>
+                    <input type="tel" name="" placeholder="Your Number" id="">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-user' ></i>
+                    <input type="text" name="" placeholder="Your Name" id="">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-group' ></i>
+                    <input type="number" name="" placeholder="Number of People" id="">
+                </div>
+                <a href="#" class="booking-btn">Book Now</a>
+            </form>
+            <p> You will be contacted for booking confirmation.</p>
+        </div>
+      </section>
+
+     <!-- Footer Section -->
+      <section class="footer container">
+        <div class="footer-box">
+            <a href="#" class="logo">Min.Cafe</a>
+            <div class="socials">
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>About Us</h3>
+            <a href="#">Our Story</a>
+            <a href="#">Our Team</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-box">
+            <h3>Behind the Beans</h3>
+            <a href="#">Sourcing</a>
+            <a href="#">Sustainability</a>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <a href="#">Contact Us</a>
+            <a href="#">Locations</a>
+            <a href="#">Career</a>
+        </div>
+      </section>
+      <p class="copyright">&#169; Min.Cafe</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src ="index.js"></script>
+</body>
+</html>

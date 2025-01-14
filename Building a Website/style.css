@@ -1,0 +1,586 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    font-family: var(--font-fam-2);
+}
+
+/* Assigning values to variables*/
+:root {
+    --main-colour: #483025;
+    --secondary-colour: #b7a18e;
+    --con-colour: #efdcca;
+    --bg-colour: #f9f6f2;
+    --text-colour: #0c0804;
+    --text-alt-colour: #94908e;
+    --poppins-font: "Poppins", sans-serif;
+    --font-fam-2: "Playfair Display", serif;
+}
+
+body {
+    background: var(--bg-colour);
+    color: var(--text-colour);
+}
+
+a {
+    text-decoration: none; /*removing text decoration from links*/
+    color: var(--text-colour);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 3rem 0 0.7rem;
+}
+
+.container {
+    margin: auto;
+    max-width: 1060px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    top: 20px;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+/*styling the navigation bar*/
+.nav {
+    display: flex; /*displaying the navigation bar as a flexbox*/
+    justify-content: space-between; /*justifying the content in the navigation bar t*/
+    align-items: center; /*aligning the items in the navigation bar vertically to the centre*/
+    background-color: var(--text-colour);
+    padding: 18px 20px;
+    border-radius: 30px; /*giving the navigation bar rounded corners*/
+}
+
+.logo {
+    color: var(--con-colour); /*colour of the logo*/
+    font-size: 23px; /*size of the logo*/
+    font-weight: 600; /*font weight of the logo*/
+}
+
+.navbar {
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-alt-colour); /*colour of the nav-bar links*/
+    font-family: var(--poppins-font);
+    font-size: 0.9rem;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    color: var(--bg-colour); /*colour of the nav-bar links changes when hovered over */
+    transition: 0.4s;
+}
+
+.nav-icons {
+    column-gap: 0.7rem; /*space between the icons*/
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons .bx {
+    color: #f9f6f2;
+    font-size: 20px;
+}
+
+/* styling the home section*/
+.home {
+    min-height: 650px; /*minimum height of the home page*/
+    display: grid; /*displaying the home page as a grid*/
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: center;
+    gap: 1.8rem; /*space between the grid items*/
+}
+
+.home-text h1 {
+    color: var(--main-colour);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.home-text p {
+    font-family: var(--poppins-font);
+    font-size: 0.95rem;
+    margin: 1.5rem 0 1rem;
+    max-width: 350px;
+}
+
+.btn {
+    display: flex;
+    max-width: 170px; /*max width of the button is 170px*/
+    align-items: center;
+    justify-content: center;
+    padding: 13px; /*adding some padding to the button*/
+    background-color: var(--text-colour); /*colour of the button*/
+    border-radius: 30px; /*brounding the corners of the button*/
+    column-gap: 0.7rem;
+}
+
+.btn span {
+    font-family: var(--poppins-font);
+    text-transform: uppercase; /*transforming the text to uppercase*/
+    color: var(--bg-colour);
+}
+
+.btn .bx {
+    background: var(--secondary-colour);
+    color: var(--bg-colour);
+    font-size: 22px;
+    border-radius: 50%; /*rounding the corners of the icon*/
+    padding: 5px;
+}
+
+.home-img {
+    max-width: 490px; /*max width of the image*/
+    width: 100%;
+}
+
+/*styling the service section*/
+.heading {
+    align-items: center; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 2.5rem; 
+}
+
+.heading h2 {
+    font-size: 2.1rem; /*font size of the heading*/
+    font-weight: 700; /*font weight of the heading*/
+}
+
+.service {
+    padding-top: 0;
+}
+
+.service-content {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(auto, 180px)); 
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px; /*adding some margin to the bottom of the content*/
+}
+
+.s-box {
+    background-color: var(--secondary-colour);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    row-gap: 10px;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+
+.s-box img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain; /*keeping the image within the box*/
+}
+
+.s-box p {
+    color: var(--text-colour);
+}
+
+/*styling the product section*/
+.heading p {
+    font-family: var(--poppins-font);
+    font-size: 0.9rem;
+    max-width: 550px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.product-con {
+    display: grid;
+    grid-template-columns: repeat(3, 250px); /*grid layout for the products*/
+    justify-content: center; 
+    gap: 5rem;
+    background: #b7a18e;
+    padding: 40px 60px;
+}
+
+.product-box {
+    background: #f9f6f2;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.product-box .heart-icon {
+    background: var(--secondary-colour);
+    position: absolute; /*positioning the heart icon*/
+    top: 40px;
+    left: 35px;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.product-box img {
+    margin-top: 5px;
+    width: 210px;
+    height: 210px;
+    border-radius: 30px; /*border radius for the image*/
+    object-fit: cover; /*keeping the image within the box*/
+}
+
+.product-box p {
+    font-family: var(--poppins-font);
+    font-size: 0.7rem;
+    font-weight: 500; /*font weight for the product name*/
+    padding: 3px 7px;
+    margin: 1rem 0 0.5rem; /*margin for the product name*/
+    border-radius: 15px;
+    border: 1px solid var(--text-alt-colour);
+    background: #f9f6f2;
+}
+
+.product-box h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--main-colour);
+}
+
+.product-info {
+    align-items: center; /*aligning the product info to centre*/
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /*space between the product info*/
+}
+
+.product-info span {
+    color: var(--main-colour);
+    font-weight: 700;
+}
+
+.product-info .bx {
+    padding: 7px;
+    color: #f9f6f2;
+    background: #0c0804;
+    cursor: pointer; /*cursor for the add to cart button*/
+    border-radius: 50%;
+}
+
+.product-info .bx:hover {
+    background-color: var(--main-colour);
+    transition: 0.4s;
+}
+
+/*styling the review section*/
+.review {
+    margin: auto;
+    max-width: 550px;
+    width: 100%;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px !important;
+}
+
+.review-box img {
+    height: 100px;
+    width: 100px;
+    object-position: center;
+    border-radius: 50%;
+    border: 3px solid #f9f6f2; /*adding a border*/
+    object-fit: cover; 
+}
+
+.review-box h2 {
+    font-family: var(--poppins-font);
+    font-size: 20px;
+    color: var(--main-colour);
+    font-weight: 700; /*making the font bold*/
+    margin: 15px; 
+}
+
+.review-box span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-colour);
+}
+
+.review-box p {
+    font-family: var(--poppins-font); 
+    font-size: 14px;
+    color: var(--text-alt-colour);
+    margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1 !important;
+    background-color: var(--main-colour) !important; 
+    border-radius: 0.2rem !important; 
+    width: 7px !important; /*setting bullet size*/
+    height: 8px !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.3rem !important;
+    background-color: var(--secondary-colour) !important; /*changing active bullet color*/
+}
+
+/*styling the booking section*/
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 20px; /*adding padding*/
+    position: relative;
+    color: var(--bg-colour);
+}
+
+.booking-img {
+    border-radius: 16px; /*adding border radius*/
+    position: absolute; /*positioning the image*/
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+    z-index: -1; /*positioning the image behind the text*/
+}
+
+.booking-overlay {
+    content: ''; /*creating an overlay*/
+    position: absolute; /*positioning the overlay*/
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; /*positioning the overlay behind the text*/
+}
+
+.booking-data {
+    margin-top: 65px;
+}
+
+.booking-data h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.booking-data form {
+    align-items: center;
+    display: flex; 
+    gap: 30px;
+    padding: 7px 10px; /*adding padding*/
+    margin: 30px 0; /*adding some margin*/
+    background: var(--bg-colour);
+    border-radius: 2rem;
+}
+
+.input-box {
+    display: flex;
+    column-gap: 7px;
+    align-items: center;
+}
+
+.input-box .bx {
+    color: var(--text-colour); /*changing the colour of the icons*/
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 0; /*padding for input*/
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.booking-btn {
+    font-family: var(--poppins-font); /*font family for the button*/
+    color: var(--bg-colour); /*colour of the button text*/
+    text-align: center; 
+    font-size: 0.8rem;
+    background-color: var(--main-colour); /*background colour of the button*/
+    padding: 10px 13px; /*padding for the button*/
+    border-radius: 33px;
+}
+
+.booking-btn:hover {
+    background-color: var(--secondary-colour);
+    transition: 0.4s;
+}
+
+.booking-data p {
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+/*styling the footer section*/
+.footer {
+    display: grid; 
+    grid-template-columns: repeat(4, auto); /*columns for the footer*/
+    justify-content: space-between; /*space between the columns*/
+    gap: 20px;
+    margin-top: 3rem;
+}
+
+.footer .logo {
+    color: var(--main-colour); /*colour of the logo in the footer*/
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.socials a {
+    font-size: 30px;
+    color: var(--text-colour); /*colour of the social icons in the footer*/
+    margin-right: 10px;
+}
+
+.socials a:hover {
+    color: var(--secondary-colour); /*hover effect for the social icons in the footer*/
+    transition: 0.4s;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h3 {
+    margin-bottom: 16px;
+    font-size: 20px; /*setting font size to 20px*/
+    font-weight: 450; /*font weight of the title in the footer*/
+}
+
+.footer-box a {
+    text-decoration: none; /*removing text decoration if any*/
+    color: var(--main-colour);
+    margin-bottom: 10px;
+}
+
+.copyright {
+    padding: 30px;
+    text-align: center;
+    color: var(--main-colour);
+}
+
+/*making the website responsive on other devices*/
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+    }
+
+    .product-con {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px;
+    }
+
+    .footer-box {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 950px){
+    section {
+        padding: 2rem;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .product-con {
+        grid-template-columns: repeat(2, auto);
+        gap: 3rem;
+        padding: 30px 10px;
+    }
+
+    .product-box {
+        padding: 15px; /*reducing padding for smaller cards*/
+        border-radius: 20px;
+    }
+
+    .product-box img {
+        width: 190px; /*reducing image size*/
+        height: 190px;
+        border-radius: 20px;
+    }
+
+    .product-box p {
+        font-size: 0.6rem; /*smaller font size for product names*/
+    }
+
+    .product-box h2 {
+        font-size: 1rem; 
+    }
+
+    .product-info {
+        margin-top: 15px;
+        flex-direction: column; /*stack product info vertically*/
+        align-items: flex-start; /*align items to the left*/
+    }
+
+    .product-box .heart-icon {
+        top: 30px;
+        left: 25px;
+    }
+
+    .product-info span {
+        font-size: 0.9rem; /*adjusting font size*/
+    }
+
+    .booking {
+        padding: 30px;
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 699px) {
+    .home-text h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .nav-link {
+        display: none;
+    }
+    
+    .heading h2 br {
+        display: contents;
+    }
+
+    .service-content {
+        justify-content: center;
+    }
+
+    .product-con {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 30px;
+    }
+}
