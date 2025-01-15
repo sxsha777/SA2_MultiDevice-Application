@@ -79,7 +79,7 @@ function switchToSignup() {
             if (response.ok) {
                 alert(`Welcome back, ${data.user.name}!`);
                 localStorage.setItem('user', JSON.stringify(data));
-                window.location.href = '\index.html';
+                window.location.href = '/Building a Website/index.html';
             } else {
                 alert(`Invalid Email or Password!`);
             }
